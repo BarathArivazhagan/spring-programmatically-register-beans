@@ -6,6 +6,7 @@ Spring boot application demonstrates how to use Configurable Application context
 ### How to register a bean programmatically in spring application context ?
 
 ```
-ConfigurableApplicationContext applicationContext=SpringApplication.run(Application.class, args);	ConfigurableBeanFactory beanFactory=applicationContext.getBeanFactory();
+ConfigurableApplicationContext applicationContext=SpringApplication.run(Application.class, args);	
+ConfigurableBeanFactory beanFactory=applicationContext.getBeanFactory();
 beanFactory.registerSingleton("testBean", new Object());
 ```
